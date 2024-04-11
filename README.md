@@ -10,15 +10,14 @@ UML: https://lucid.app/lucidchart/b79a0e73-d671-4538-9bb0-693d1d7ed66e/edit?invi
 
 **Setup**
 
-**Technologies Used
-**
-**Controllers and Routes structure
-**
-**Extra links(Trello, Presentation Slides, etc…)
-**
-**Future Work
-**
-**Resources
-**
-**Team members
-**
+**Technologies Used**
+
+**Controllers and Routes structure**
+
+**Extra links(Trello, Presentation Slides, etc…)**
+
+**Future Work**
+
+**Resources**
+
+**Team members**
