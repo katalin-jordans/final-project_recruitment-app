@@ -7,6 +7,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Entity
 @Table(name = "job")
 @Data
@@ -26,4 +28,6 @@ public class Job {
     private String jobDescription;
     @Enumerated(EnumType.STRING)
     private JobStatus status;
+    @OneToMany(mappedBy="job")
+    private Set<Application> applications;
 }
