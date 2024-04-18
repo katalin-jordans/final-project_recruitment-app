@@ -24,7 +24,7 @@ public class ApplicationController {
 
     @PostMapping()
     @ResponseStatus(HttpStatus.CREATED)
-    public List<Application> addJob() {
+    public List<Application> addApplication() {
         return applicationRepository.findAll();
     }
 }
