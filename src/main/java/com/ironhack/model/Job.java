@@ -24,5 +24,6 @@ public class Job {
     private Recruiter recruiter;
     private String jobTitle;
     private String jobDescription;
+    @Enumerated(EnumType.STRING)
     private JobStatus status;
 }
