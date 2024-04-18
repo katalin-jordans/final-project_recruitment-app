@@ -25,6 +25,7 @@ public class Application {
     @JoinColumn(name="id")
     private Job job;
     private Date applicationDate;
+    @Enumerated(EnumType.STRING)
     private ApplicationStage stage;
     private int interviewRound;
 }
