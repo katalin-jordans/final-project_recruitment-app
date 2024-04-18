@@ -1,33 +1,31 @@
 package com.ironhack.model;
 
-import com.ironhack.model.enums.JobStatus;
+import com.ironhack.model.enums.ApplicationStage;
 import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Set;
+import java.util.Date;
 
 @Entity
-@Table(name = "job")
+@Table(name = "application")
 @Data
 @NoArgsConstructor
-public class Job {
+public class Application {
     @Setter(AccessLevel.NONE)
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @ManyToOne
     @JoinColumn(name="id")
-    private HiringManager hiringManager;
+    private Candidate candidate;
     @ManyToOne
     @JoinColumn(name="id")
-    private Recruiter recruiter;
-    private String jobTitle;
-    private String jobDescription;
+    private Job job;
+    private Date applicationDate;
     @Enumerated(EnumType.STRING)
-    private JobStatus status;
-    @OneToMany(mappedBy="job")
-    private Set<Application> applications;
+    private ApplicationStage stage;
+    private int interviewRound;
 }
