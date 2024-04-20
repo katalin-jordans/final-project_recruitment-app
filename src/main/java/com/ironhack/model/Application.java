@@ -28,4 +28,14 @@ public class Application {
     @Enumerated(EnumType.STRING)
     private ApplicationStage stage;
     private int interviewRound;
+    @Transient
+    private String status;
+
+    public String getStatus() {
+        if (stage == ApplicationStage.REJECTED || stage == ApplicationStage.HIRED) {
+            return "Closed";
+        } else {
+            return "Open";
+        }
+    }
 }

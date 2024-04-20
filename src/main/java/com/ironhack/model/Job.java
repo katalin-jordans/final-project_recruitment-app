@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Date;
 import java.util.Set;
 
 @Entity
@@ -30,4 +31,7 @@ public class Job {
     private JobStatus status;
     @OneToMany(mappedBy="job")
     private Set<Application> applications;
+    private Date openDate;
+    private Date closeDate;
+
 }
