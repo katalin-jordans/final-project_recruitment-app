@@ -12,4 +12,5 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 public class HiringManager extends User {
+    private String title;
 }
