@@ -15,6 +15,7 @@ import java.util.Set;
 @Data
 @NoArgsConstructor
 public class HiringManager extends User {
+    private String title;
     @OneToMany(mappedBy="hiringManager")
     private Set<Job> jobs;
 }
