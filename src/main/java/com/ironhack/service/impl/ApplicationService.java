@@ -1,4 +1,4 @@
-package com.ironhack.service;
+package com.ironhack.service.impl;
 
 import com.ironhack.repository.ApplicationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
