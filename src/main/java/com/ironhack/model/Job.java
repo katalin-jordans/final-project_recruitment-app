@@ -21,10 +21,10 @@ public class Job {
     private int id;
     @ManyToOne
     @JoinColumn(name="id")
-    private HiringManager hiringManager;
+    private User hiringManager;
     @ManyToOne
     @JoinColumn(name="id")
-    private Recruiter recruiter;
+    private User recruiter;
     private String jobTitle;
     private String jobDescription;
     @Enumerated(EnumType.STRING)
