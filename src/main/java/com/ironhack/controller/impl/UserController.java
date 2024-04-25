@@ -1,4 +1,4 @@
-package com.ironhack.controller;
+package com.ironhack.controller.impl;
 
 import com.ironhack.model.User;
 import com.ironhack.repository.UserRepository;

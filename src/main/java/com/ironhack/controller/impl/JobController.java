@@ -1,4 +1,4 @@
-package com.ironhack.controller;
+package com.ironhack.controller.impl;
 
 import com.ironhack.model.Job;
 import com.ironhack.repository.JobRepository;

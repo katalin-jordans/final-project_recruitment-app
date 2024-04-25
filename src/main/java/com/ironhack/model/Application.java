@@ -20,7 +20,7 @@ public class Application {
     private int id;
     @ManyToOne
     @JoinColumn(name="id")
-    private Candidate candidate;
+    private User candidate;
     @ManyToOne
     @JoinColumn(name="id")
     private Job job;
